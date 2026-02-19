@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Patisserie</title>
+
+<!-- GOOGLE FONTS (puedes cambiarlas después) -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ======================
+   VARIABLES (COLORES EDITABLES)
+   ====================== */
+:root{
+  --primary:#2f6fed;
+  --secondary:#dfe9ff;
+  --accent:#5aa3ff;
+  --bg:#f5f8ff;
+  --text:#1b1b1b;
+}
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* NAVBAR */
+
+header{
+  background:white;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-family:'Playfair Display', serif;
+  font-size:28px;
+  color:var(--primary);
+}
+
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:60px 40px;
+  background:linear-gradient(90deg,#eaf2ff,#ffffff);
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.hero img{
+  width:300px;
+  border-radius:15px;
+}
+
+.hero-text{
+  max-width:500px;
+  text-align:center;
+}
+
+.hero-text h1{
+  font-family:'Playfair Display', serif;
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.btn{
+  background:var(--primary);
+  color:white;
+  padding:12px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:15px;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:var(--accent);
+}
+
+/* SIGNATURE SECTION */
+
+.section{
+  padding:70px 40px;
+  text-align:center;
+}
+
+.section h2{
+  font-family:'Playfair Display', serif;
+  font-size:36px;
+  margin-bottom:40px;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  width:280px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin:15px 0 5px;
+}
+
+.card p{
+  font-size:14px;
+  padding:0 15px 20px;
+  color:#666;
+}
+
+/* PROMO SECTION */
+
+.promo{
+  background:linear-gradient(90deg,#e0ecff,#cfe0ff);
+  padding:60px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.promo img{
+  width:300px;
+  border-radius:15px;
+}
+
+.promo-box{
+  text-align:center;
+}
+
+.discount{
+  background:white;
+  padding:15px 30px;
+  border-radius:10px;
+  font-size:28px;
+  font-weight:bold;
+  margin:15px 0;
+}
+
+/* FOOTER */
+
+footer{
+  background:white;
+  padding:30px;
+  text-align:center;
+  margin-top:40px;
+  font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ======================
+     NAVBAR
+     (EDITAR TEXTOS LIBREMENTE)
+====================== -->
+
+<header>
+
+<div class="logo">Blue Patisserie</div>
+
+<nav>
+<a href="#">HOME</a>
+<a href="#">MENU</a>
+<a href="#">CAKES</a>
+<a href="#">CONTACTO</a>
+</nav>
+
+</header>
+
+
+<!-- ======================
+     HERO SECTION
+====================== -->
+
+<section class="hero">
+
+<img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729" alt="Pastel azul elegante">
+
+<div class="hero-text">
+
+<h1>Delight in every bite!</h1>
+
+<p>
+Este texto es editable. Puedes cambiar descripciones, títulos,
+precios o cualquier información después sin problemas.
+</p>
+
+<a class="btn" href="#">ORDENAR AHORA</a>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1607478900766-efe13248b125" alt="Pastel azul premium">
+
+</section>
+
+
+<!-- ======================
+     SIGNATURE
+====================== -->
+
+<section class="section">
+
+<h2>Signature</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7">
+<h3>Custom Cakes</h3>
+<p>Texto editable para describir productos personalizados.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1559628233-100c798642d4">
+<h3>Macarons Azules</h3>
+<p>Puedes cambiar esta descripción cuando quieras.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e">
+<h3>Cupcake Collection</h3>
+<p>Información editable para promociones o catálogo.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ======================
+     PROMO / HOLIDAY
+====================== -->
+
+<section class="promo">
+
+<img src="https://images.unsplash.com/photo-1602351447937-745cb720612f">
+
+<div class="promo-box">
+
+<h2>Blue Collection</h2>
+
+<div class="discount">20% OFF</div>
+
+<a class="btn" href="#">ORDENAR HOY</a>
+
+</div>
+
+</section>
+
+
+<!-- ======================
+     FOOTER
+====================== -->
+
+<footer>
+
+<p>© 2026 Blue Patisserie — Todo el contenido es editable.</p>
+<p>Diseño adaptable. Puedes cambiar colores en :root del CSS.</p>
+
+</footer>
+
+</body>
+</html>
